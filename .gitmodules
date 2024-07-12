@@ -1,0 +1,9 @@
+[submodule "hugo-theme-dream"]
+	path = hugo-theme-dream
+	url = git@github.com:g1eny0ung/hugo-theme-dream.git
+[submodule "themes/dream"]
+	path = themes/dream
+	url = git@github.com:g1eny0ung/hugo-theme-dream.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git

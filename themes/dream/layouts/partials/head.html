@@ -1,0 +1,40 @@
+{{ if isset site.Params "favicon" }}
+<link href="{{ site.Params.favicon }}" rel="shortcut icon" type="image/x-icon" />
+{{ end }}
+
+{{ if eq .Type "posts" }}
+<!-- Page Author & Description -->
+<meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ site.Params.author }}{{ end }}" />
+<meta name="description" content="{{ .Summary | plainify }}" />
+{{ else }}
+<!-- Site Author & Description -->
+<meta name="author" content="{{ site.Params.author }}" />
+<meta name="description" content="{{ site.Params.description }}" />
+{{ end }}
+
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- Open Graph -->
+{{ template "_internal/opengraph.html" . }}
+
+<!-- Twitter Cards -->
+{{ template "_internal/twitter_cards.html" . }}
+
+<!-- Site Generator -->
+{{ hugo.Generator }}
+
+<link rel="stylesheet" href="{{ "/css/output.css" | relURL }}" />
+
+<style>
+{{ if .Site.Params.backgroundImage }}
+#dream-global-bg {
+  background-image: url({{ .Site.Params.backgroundImage }});
+}
+{{ end }}
+
+{{ if .Site.Params.backgroundImageDark }}
+html.dark #dream-global-bg {
+  background-image: url({{ .Site.Params.backgroundImageDark }});
+}
+{{ end }}
+</style>

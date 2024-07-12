@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/public/categories/生活" />
+      <excludeFolder url="file://$MODULE_DIR$/public/categories/给自己的总结" />
+      <excludeFolder url="file://$MODULE_DIR$/public/categories/语言" />
+      <excludeFolder url="file://$MODULE_DIR$/public/en" />
+      <excludeFolder url="file://$MODULE_DIR$/public/posts/1月电影简评-american-psycho" />
+      <excludeFolder url="file://$MODULE_DIR$/public/posts/css-layout" />
+      <excludeFolder url="file://$MODULE_DIR$/public/posts/css-layout---copy" />
+      <excludeFolder url="file://$MODULE_DIR$/public/posts/css-layout.en" />
+      <excludeFolder url="file://$MODULE_DIR$/public/posts/oppenheimer-review" />
+      <excludeFolder url="file://$MODULE_DIR$/public/posts/sass-new" />
+      <excludeFolder url="file://$MODULE_DIR$/public/posts/word-power-made-easy-zh" />
+      <excludeFolder url="file://$MODULE_DIR$/public/tags/css" />
+      <excludeFolder url="file://$MODULE_DIR$/public/tags/font" />
+      <excludeFolder url="file://$MODULE_DIR$/public/tags/sass" />
+      <excludeFolder url="file://$MODULE_DIR$/public/tags/scss" />
+      <excludeFolder url="file://$MODULE_DIR$/public/tags/年度" />
+      <excludeFolder url="file://$MODULE_DIR$/public/tags/英语" />
+      <excludeFolder url="file://$MODULE_DIR$/public/zh" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

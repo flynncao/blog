@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }} {{- T "home" -}} {{ end }} | {{ .Site.Title }}</title>
+
+    {{ partial "head.html" . }}
+
+    {{ block "css" . }} {{ end }}
+
+    {{ range .Site.Params.Advanced.customCSS }}
+    <link rel="stylesheet" href="{{ . | relURL }}" />
+    {{ end }}
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    <!-- If backgroundImage defined -->
+    <div id="dream-global-bg"></div>
+
+    {{ partial "nav.html" . }}
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <section class="front">
+          <div class="container">
+            {{ block "main" . }} {{ end }}
+
+            <footer class="flex justify-between items-center gap-2 px-4 py-12">
+              {{ partial "footerLeft.html" . }}
+              {{ partial "footerRight.html" . }}
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="container">
+            {{ partial "back.html" . }}
+          </div>
+        </section>
+      </div>
+    </div>
+
+    {{ partial "scripts.html" . }}
+    {{ block "js" . }} {{ end }}
+
+    {{ range .Site.Params.Advanced.customJS }}
+    <script src="{{ . | relURL }}"></script>
+    {{ end }}
+
+    {{ if site.Config.Services.GoogleAnalytics.ID }}
+    {{ template "_internal/google_analytics.html" . }}
+    {{ end }}
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

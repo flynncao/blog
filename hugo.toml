@@ -1,0 +1,84 @@
+baseURL = "https://flynncao.xyz"
+languageCode = "zh-Hans"
+defaultContentLanguage = "zh"
+title = "Majimay的四次元口袋"
+theme = "dream"
+
+enableGitInfo = true
+enableRobotsTXT = true
+
+hasCJKLanguage = true
+
+
+[markup]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+noClasses = false
+
+[params]
+lightTheme = "emerald"
+darkTheme = "forest"
+
+# backgroundImage = "/me/light.png"
+backgroundImageDark = "me/nrze427er2zb1.jpg"
+
+images = ["me/background.jpg"]
+
+author = "flynncao"
+description = "The life record of Flynn Cao is presented here."
+avatar = "/me/avatar.jpg"
+headerTitle = "Majimay的四次元口袋"
+motto = "Not all those who wander are lost."
+
+footerBottomText = ""
+
+rss = true
+
+utterancesRepo = ""
+
+# valine = true
+# LEANCLOUD_APP_ID = ""
+# LEANCLOUD_APP_KEY = ""
+# VALINE_LANGUAGE = ""
+
+email = "realflynncao@gmail.com"
+
+siteStartYear = 2022
+
+favicon = "/favicon.ico"
+
+# Syntax highlighting
+customSyntaxHighlighting = true
+
+# options
+stickyNav = true
+showSummaryCoverInPost = true
+hasTwitterEmbed = true
+
+[params.advanced]
+customCSS = ["css/custom.css"]
+# customJS = []
+
+[params.experimental]
+jsDate = true
+jsDateFormat = "yyyy年MM月dd日"
+# jsDateFormat = "yyyy年MM月dd日，cccc"
+
+[languages]
+  [languages.zh]
+	languageCode=  'zh-Hans'
+	languageName = 'Chinese'
+    languageDirection = 'ltr'
+    title = 'Majimay的四次元口袋'
+    weight = 1
+  [languages.en]
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Majimay Blog'
+    weight = 2
+    [languages.en.params]
+      subtitle = 'Reference, Tutorials, and Explanations'	
+
