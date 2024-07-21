@@ -7,6 +7,9 @@ tags:
 category: code
 lang: zh
 tocAlwaysOn: true
+cover: /img/css-layout.jpg
+images:
+  - /img/css-layout.jpg
 ---
 
 ---

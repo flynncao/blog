@@ -8,6 +8,9 @@ tags:
 category: code
 lang: zh
 tocAlwaysOn: true
+cover: /img/sass-new.jpg
+images:
+  - /img/sass-new.jpg
 ---
 
 [原文](/en/posts/sass-new/)

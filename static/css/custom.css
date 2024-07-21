@@ -1,6 +1,6 @@
 [data-theme="emerald"] #disqus_thread {
   color-scheme: none;
-  background-color: #fff;
+  background-color: red;
   color: #333c4d;
 }
 
@@ -9,3 +9,13 @@
   background-color: #171213;
   color: #cbc9ca;
 }
+
+
+.card-body:hover{
+	background-color:#eaebed;
+}
+.dark .card-body:hover{
+	background-color:#24292e;
+}
+
+

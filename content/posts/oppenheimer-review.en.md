@@ -4,6 +4,9 @@ date: 2024-04-02T00:00:00.000+00:00
 category: writing
 lang: en
 tocAlwaysOn: true
+cover: /img/oppenheimer.png
+images: 
+  - /img/oppenheimer.png
 ---
 
 I love Christopher Nolan's films. Inception and Interstellar are among the most intricate and mysterious sci-fi films. What would the biographical film directed by him be like?  The most fantastic experience Nolan gave me was mimicking the Oppie's imagination in the scene, sometimes like flames, particles, and rainbows. Most of the time, the atomics crash each other. 

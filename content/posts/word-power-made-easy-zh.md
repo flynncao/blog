@@ -2,9 +2,9 @@
 title: Word Power Made Easy 小白书
 date: 2023-05-13T00:00:00.000+00:00
 author: flynncao
-cover: /img/2016年的总结.jpg
+cover: /img/word-power-made-easy.jpg
 images:
-  - /img/2016年的总结.jpg
+  - /img/word-power-made-easy.jpg
 categories:
   - 语言
 tags:

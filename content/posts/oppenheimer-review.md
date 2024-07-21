@@ -4,6 +4,9 @@ date: 2024-04-02T00:00:00.000+00:00
 category: writing
 lang: zh
 tocAlwaysOn: true
+cover: /img/oppenheimer.png
+images: 
+  - /img/oppenheimer.png
 ---
 
 [查看原文](/en/posts/oppenheimer-review/)

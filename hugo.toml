@@ -20,16 +20,17 @@ noClasses = false
 lightTheme = "emerald"
 darkTheme = "forest"
 
-# backgroundImage = "/me/light.png"
+
+#backgroundImage = "/me/00480681_p0.jpg"
 backgroundImageDark = "me/nrze427er2zb1.jpg"
 
 images = ["me/background.jpg"]
 
 author = "flynncao"
 description = "The life record of Flynn Cao is presented here."
-avatar = "/me/avatar.jpg"
+avatar = "/me/takina_redhat.jpeg"
 headerTitle = "Majimay的四次元口袋"
-motto = "Not all those who wander are lost."
+motto = "Art of Improvisation."
 
 footerBottomText = ""
 

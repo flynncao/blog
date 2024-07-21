@@ -8,6 +8,9 @@ tags:
 category: code
 lang: en
 tocAlwaysOn: true
+cover: /img/sass-new.jpg
+images:
+  - /img/sass-new.jpg
 ---
 
 

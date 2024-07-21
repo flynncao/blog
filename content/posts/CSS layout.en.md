@@ -8,7 +8,9 @@ tags:
 category: code
 lang: en
 tocAlwaysOn: true
-
+cover: /img/css-layout.jpg
+images:
+  - /img/css-layout.jpg
 ---
 
 ---
