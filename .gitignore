@@ -1,3 +1,4 @@
 *.legacy
 public/
-.vscode/
+.vscode
+.idea
