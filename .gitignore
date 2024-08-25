@@ -1,4 +1,15 @@
+.DS_Store
 *.legacy
-public/
+# IDE
 .vscode
 .idea
+# output
+public/
+# node.js
+node_modules
+# themes
+themes/*
+!themes/.gitkeep
+# hugo
+resources
+.hugo_build.lock
