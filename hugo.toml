@@ -1,9 +1,8 @@
-baseURL = "https://flynncao.xyz"
+baseURL = "https://flynncao.uk"
 languageCode = "zh-Hans"
 defaultContentLanguage = "zh"
 title = "Majimay的四次元口袋"
 theme = "dream"
-
 enableGitInfo = true
 enableRobotsTXT = true
 
@@ -18,11 +17,11 @@ noClasses = false
 
 [params]
 lightTheme = "emerald"
-darkTheme = "forest"
+darkTheme = "dark"
 
 
 #backgroundImage = "/me/00480681_p0.jpg"
-backgroundImageDark = "me/nrze427er2zb1.jpg"
+#backgroundImageDark = "me/nrze427er2zb1.jpg"
 
 images = ["me/background.jpg"]
 
@@ -30,7 +29,7 @@ author = "flynncao"
 description = "The life record of Flynn Cao is presented here."
 avatar = "/me/avatar2.jpeg"
 headerTitle = "Majimay的四次元口袋"
-motto = "Art of Improvisation."
+motto = "Its better to be absolutely ridiculous than absolutely boring!"
 
 footerBottomText = ""
 
@@ -42,6 +41,10 @@ utterancesRepo = ""
 # LEANCLOUD_APP_ID = ""
 # LEANCLOUD_APP_KEY = ""
 # VALINE_LANGUAGE = ""
+waline = true
+# walineServer = "https://waline.flynncao.uk"
+walineServer = "https://walineserermajimayblog.vercel.app/"
+
 
 email = "realflynncao@gmail.com"
 
@@ -53,9 +56,15 @@ favicon = "/favicon.ico"
 customSyntaxHighlighting = true
 
 # options
-stickyNav = true
 showSummaryCoverInPost = true
 hasTwitterEmbed = true
+stickyNav = true
+reorderNavItems = ["search", "github", "posts", "categories", "tags", "rss"]
+collapseNavItems = ["posts", "categories", "tags", "rss"]
+# noDefaultSummaryCover = true
+showTableOfContents = true
+showPrevNextPost = true
+
 
 [params.advanced]
 customCSS = ["css/custom.css"]
@@ -65,6 +74,10 @@ customCSS = ["css/custom.css"]
 jsDate = true
 jsDateFormat = "yyyy年MM月dd日"
 # jsDateFormat = "yyyy年MM月dd日，cccc"
+
+[services]
+[services.googleAnalytics]
+ID = 'G-6XW7QWCBGK'
 
 [languages]
   [languages.zh]

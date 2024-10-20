@@ -2,10 +2,15 @@
 socials = [
   { href = "https://github.com/flynncao", target="_blank", icon = "logo-github", title = "GitHub" },
   { href = "https://x.com/real_flynncao", target="_blank", icon = "logo-x", title = "X" },
-  { href = "https://discord.gg/XmNVCj4y6Y", target="_blank", icon = "logo-discord", title = "Discord" },
+  { href = "https://discord.gg/XmNVCj4y6Y", target="_blank", icon = "logo-discord", title = "Discord Server" },
+  { href = "https://t.me/flynncao/", target="_blank", icon="paper-plane-outline", title="Telegram"},
+  { href = "https://goodreads.com/flynncao", target="_blank", icon = "book-outline", title = "Good Reads" },
+  { href = "https://www.imdb.com/user/ur151854404", target="_blank", icon = "film-outline", title="IMDB"},
+  { href = "https://steamcommunity.com/id/flynncao/", target="_blank", icon="logo-steam", title="Steam" },
   # { href = "https://facebook.com/g1eny0ung", target="_blank", icon = "logo-facebook", title = "Facebook" },
   # { href = "https://instagram.com/g1eny0ung", target="_blank", icon = "logo-instagram", title = "Instagram" },
   #{ href = "https://www.linkedin.com/in/g1eny0ung", target="_blank", icon = "logo-linkedin", title = "Linkedin" },
   #{ href = "https://stackoverflow.com/users/5676489/g1eny0ung", target="_blank", icon = "logo-stackoverflow", title = "stack overflow" },
   #{ href = "https://codepen.io/g1eny0ung", target="_blank", icon = "logo-codepen", title = "Codepen" },
+  
 ]
