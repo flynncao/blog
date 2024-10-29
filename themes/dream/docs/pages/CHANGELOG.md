@@ -5,6 +5,145 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Add `reorderShares` param [#320](https://github.com/g1eny0ung/hugo-theme-dream/pull/320)
+
+## [3.8.1] - 2024-09-08
+
+### Fixed
+
+- Fix the cache issue of `commentSystems.html`
+- Add missing "about" translation to the Italian language file
+
+## [3.8.0] - 2024-09-07
+
+### Added
+
+- Valine comments can now be customized using a partial file [#311](https://github.com/g1eny0ung/hugo-theme-dream/pull/311)
+- Support [Waline](https://waline.js.org/en/) comments [#310](https://github.com/g1eny0ung/hugo-theme-dream/pull/310)
+
+### Changed
+
+- Upgrade Hugo minimum version to 0.97.0
+
+### Deprecated
+
+- Deprecate `VALINE_LANGUAGE` param [#309](https://github.com/g1eny0ung/hugo-theme-dream/pull/309)
+
+## [3.7.0] - 2024-08-29
+
+### Added
+
+- Add [Mermaid](https://mermaid.js.org/intro/) diagrams support [#307](https://github.com/g1eny0ung/hugo-theme-dream/pull/307)
+- Add [GitHub Alerts Markdown extension](https://github.blog/changelog/2023-12-14-new-markdown-extension-alerts-provide-distinctive-styling-for-significant-content/) compatible alerts [#308](https://github.com/g1eny0ung/hugo-theme-dream/pull/308)
+
+### Fixed
+
+- Fix image size of summary cards in Zen mode
+
+## [3.6.1] - 2024-08-25
+
+### Fixed
+
+- Render SVG images in summary
+- Incorrect use of the `_internal/schema.html` template [#306](https://github.com/g1eny0ung/hugo-theme-dream/pull/306)
+- Remove shortcut link type in favicon
+
+## [3.6.0] - 2024-08-24
+
+### Added
+
+- Add `noDefaultSummaryCover` param [#301](https://github.com/g1eny0ung/hugo-theme-dream/pull/301)
+
+### Changed
+
+- Enhance Japanese translation [#303](https://github.com/g1eny0ung/hugo-theme-dream/pull/303)
+- Enhance Chinese translation
+- Supplement meta tags for SEO [#305](https://github.com/g1eny0ung/hugo-theme-dream/pull/305)
+
+### Deprecated
+
+- Deprecate `hasTwitterEmbed` param [#302](https://github.com/g1eny0ung/hugo-theme-dream/pull/302)
+
+## [3.5.0] - 2024-08-19
+
+🍃 Hugo Theme Dream 3.5 introduces Zen mode. View [Zen Mode](./zen-mode.mdx) for more details.
+
+### Added
+
+- Zen mode: a simple layout that allows you to concentrate on reading and writing [#299](https://github.com/g1eny0ung/hugo-theme-dream/pull/299)
+
+### Changed
+
+- Now taxonomy pages follow the same layout as the home page
+
+### Deprecated
+
+- If you still use `disqusShortname`, please replace it with `services.disqus.shortname`
+
+### Fixed
+
+- Fix height of `.flip-container` class
+- Fix tabindex issue in nav menu
+
+## [3.4.1] - 2024-08-14
+
+### Added
+
+- Allow text-based custom nav items
+
+### Changed
+
+- Refactor the implementation of localized time [#298](https://github.com/g1eny0ung/hugo-theme-dream/pull/298)
+
+## [3.4.0] - 2024-08-10
+
+### Added
+
+- Add `reorderNavItems` and `collapseNavItems` params to reorder and collapse navigation items
+- Add `[params.navItems]` to append custom items to the navbar
+
+### Changed
+
+- Minimalize the theme css
+
+### Fixed
+
+- Add missing descriptive attributes in some elements
+
+## [3.3.0] - 2024-08-01
+
+### Added
+
+- Support arbitrary taxonomies [#292](https://github.com/g1eny0ung/hugo-theme-dream/pull/292)
+
+### Fixed
+
+- Fix the overflow problem of pre's content
+- Fix an overflow problem when users enable always show scroll bars in the system settings
+- Resources accessibility when deploying site to a subdomain [#295](https://github.com/g1eny0ung/hugo-theme-dream/pull/295)
+
+## [3.2.0] - 2024-07-25
+
+### Added
+
+- Add `showPrevNextPost` param to control the display of previous and next post links in the single post page
+- Add `showTableOfContents` param to control the display of the table of contents in the single post page
+
+## [3.1.1] - 2024-07-23
+
+### Changed
+
+- Adjust shadow style of navbar
+- Now if a paginator has only one page, the previous and next buttons will be hidden
+
+### Fixed
+
+- Correct the usage of semantic elements in `baseof.html` and `single.html`
+
 ## [3.1.0] - 2024-07-18
 
 ### Added

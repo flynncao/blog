@@ -7,7 +7,16 @@ tocAlwaysOn: true
 cover: /img/oppenheimer.png
 images: 
   - /img/oppenheimer.png
+tags:
+  - 电影
+  - 影评
 ---
+
+进化的诅咒。
+
+
+<!--more-->
+
 
 [查看原文](/en/posts/oppenheimer-review/)
 

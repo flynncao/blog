@@ -1,5 +1,5 @@
 {
-  "contact": {
+  "docs-v2": {
     "title": "Docs (v2)",
     "type": "page",
     "href": "https://hugo-theme-dream-docs-v2.netlify.app",
@@ -8,6 +8,7 @@
   "index": "Quick Start",
   "base-configurations": "Base Configurations",
   "params-configurations": "Params Configurations",
+  "zen-mode": "Zen Mode",
   "i18n": "i18n",
   "website-analytics": "Website Analytics",
   "social-comments": "Social Comments",
@@ -15,9 +16,10 @@
   "about-page": "About Page",
   "search": "Search",
   "summary-images": "Summary Images",
-  "syntax-highlighting": "Syntax highlighting",
+  "syntax-highlighting": "Syntax Highlighting",
   "custom-archives-header": "Custom Archives Header",
   "social-links": "Social Links",
+  "custom-nav-items": "Custom Nav Items",
   "light-and-dark-mode": "Light and Dark Mode",
   "custom": "Custom Theme",
   "decap-cms": "Decap CMS",

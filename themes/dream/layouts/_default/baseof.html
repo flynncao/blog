@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}"
+<html lang="{{ site.LanguageCode }}"
   x-data
   :class="$store.darkMode.class()"
   :data-theme="$store.darkMode.theme()">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ block "title" . }} {{- T "home" -}} {{ end }} | {{ .Site.Title }}</title>
+    <title>{{ block "title" . -}} {{ T "home" }} {{- end }} | {{ site.Title }}</title>
 
     {{ partial "head.html" . }}
 
     {{ block "css" . }} {{ end }}
 
-    {{ range .Site.Params.Advanced.customCSS }}
+    {{ range site.Params.Advanced.customCSS }}
     <link rel="stylesheet" href="{{ . | relURL }}" />
     {{ end }}
 
@@ -29,28 +29,43 @@
 
     <div class="flip-container" :class="{ 'flip-it': flip }">
       <div class="flipper">
-        <section class="front">
+        <div class="front">
           <div class="container">
             {{ block "main" . }} {{ end }}
 
+            {{ if site.Params.zenMode }}
+            <footer class="flex justify-between items-center gap-2 max-w-[65ch] mx-auto px-4 md:px-0 py-12">
+            {{ else }}
             <footer class="flex justify-between items-center gap-2 px-4 py-12">
+            {{ end }}
               {{ partial "footerLeft.html" . }}
               {{ partial "footerRight.html" . }}
             </footer>
           </div>
-        </section>
-        <section class="back">
+        </div>
+        <div class="back">
           <div class="container">
+            {{ if site.Params.zenMode }}
+            {{ partial "zen-back.html" . }}
+            {{ else }}
             {{ partial "back.html" . }}
+            {{ end }}
           </div>
-        </section>
+        </div>
       </div>
     </div>
 
     {{ partial "scripts.html" . }}
     {{ block "js" . }} {{ end }}
 
-    {{ range .Site.Params.Advanced.customJS }}
+    {{ if .Store.Get "hasMermaid" }}
+      <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.1.0/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+      </script>
+    {{ end }}
+
+    {{ range site.Params.Advanced.customJS }}
     <script src="{{ . | relURL }}"></script>
     {{ end }}
 

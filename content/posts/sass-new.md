@@ -13,6 +13,10 @@ images:
   - /img/sass-new.jpg
 ---
 
+如何将scss/sass融入你熟悉的前端框架中？这可能是一个指南 
+
+<!--more-->
+
 [原文](/en/posts/sass-new/)
 
 最近，我发现了一个[项目](https://github.com/0xAliRaza/habitly)，实现了詹姆斯·克利尔的著名书籍《原子习惯》中提到的方法论；我成功地将所有软件包更新到最新版本以使其正常运行。

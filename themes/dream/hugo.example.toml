@@ -1,6 +1,6 @@
 baseurl = "https://example.com"
-languageCode = "en"
 defaultContentLanguage = "en"
+languageCode = "en"
 title = "Hugo Theme Dream"
 theme = "hugo-theme-dream"
 
@@ -11,15 +11,17 @@ theme = "hugo-theme-dream"
 # ID = ""
 
 [params]
+# zenMode = true
+
 lightTheme = "emerald"
 darkTheme = "forest"
 
-# backgroundImage = "/me/background.jpg"
+# backgroundImage = "me/background.jpg"
 # backgroundImageDark = ""
 
 author = "Dream"
 # description = ""
-# avatar = "/img/avatar.png"
+# avatar = "img/avatar.png"
 headerTitle = "Hugo Theme Dream"
 # motto = ""
 
@@ -32,21 +34,30 @@ headerTitle = "Hugo Theme Dream"
 # valine = true
 # LEANCLOUD_APP_ID = ""
 # LEANCLOUD_APP_KEY = ""
-# VALINE_LANGUAGE = ""
+
+# waline = true
+# walineServer = ""
 
 # email = ""
 
 siteStartYear = 2016
 
-# favicon = "/favicon.ico"
+# favicon = "favicon.ico"
 
 # Syntax highlighting
 # customSyntaxHighlighting = true
 
 # options
 # stickyNav = true
+# reorderNavItems = ["search", "rss", "posts", "categories", "tags"]
+# collapseNavItems = ["posts", "categories", "tags"]
+# noDefaultSummaryCover = true
+# showTableOfContents = true
 # showSummaryCoverInPost = true
-# hasTwitterEmbed = true
+# showPrevNextPost = true
+# reorderShares = ["x", "facebook", "whatsapp"]
+
+# [params.navItems]
 
 # [params.advanced]
 # customCSS = ["css/custom.css"]

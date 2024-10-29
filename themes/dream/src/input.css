@@ -15,7 +15,8 @@
 
 .flip-container {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 112px);
+  max-width: 100%;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective: 1000px;
@@ -55,3 +56,64 @@
     transform: rotateY(180deg);
   }
 }
+
+#TableOfContents {
+  @apply sticky top-24;
+}
+
+#TableOfContents ul {
+  @apply menu menu-sm;
+}
+
+.dream-alert {
+  > .heading {
+    @apply flex items-center gap-1 text-sm font-medium;
+  }
+
+  ion-icon {
+    font-size: 1rem;
+  }
+
+  &.note {
+    @apply border-s-blue-600 dark:border-s-blue-500;
+
+    .heading {
+      @apply text-blue-600 dark:text-blue-500;
+    }
+  }
+
+  &.tip {
+    @apply border-s-green-600 dark:border-s-green-500;
+
+    .heading {
+      @apply text-green-600 dark:text-green-500;
+    }
+  }
+
+  &.important {
+    @apply border-s-purple-600 dark:border-s-purple-500;
+
+    .heading {
+      @apply text-purple-600 dark:text-purple-500;
+    }
+  }
+
+  &.warning {
+    @apply border-s-yellow-600 dark:border-s-yellow-500;
+
+    .heading {
+      @apply text-yellow-600 dark:text-yellow-500;
+    }
+  }
+
+  &.caution {
+    @apply border-s-red-600 dark:border-s-red-500;
+
+    .heading {
+      @apply text-red-600 dark:text-red-500;
+    }
+  }
+}
+
+
+

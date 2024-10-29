@@ -1,12 +1,16 @@
 {{ if site.Params.stickyNav }}
 <nav x-data="{ isSticky: false }"
   x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
-  class="sticky top-0 z-30 mt-4 lg:mt-8 pt-4 pb-4"
-  :class="{ 'transition bg-base-100 shadow-xl dark:border-b dark:border-base-content/30': isSticky }">
+  class="sticky top-0 z-30 mt-4 lg:mt-8 py-4"
+  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
 {{ else }}
-<nav class="mt-4 lg:mt-8 pt-4 pb-4">
+<nav class="mt-4 lg:mt-8 py-4">
 {{ end }}
+  {{ if site.Params.zenMode }}
+  <div class="container flex justify-between max-w-[65ch] mx-auto px-4 md:px-0">
+  {{ else }}
   <div class="container flex justify-between px-4">
+  {{ end }}
     <section class="flex items-center gap-4">
       <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="{{ T "flip" }}">
         <div class="h-10 rounded-full">
@@ -29,11 +33,11 @@
     </section>
 
     <div class="dropdown dropdown-end sm:hidden">
-      <div tabindex="0" role="button" class="btn btn-ghost btn-square">
-        <ion-icon name="menu-outline" size="large"></ion-icon>
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
       </div>
-      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow">
-        {{ partial "navRightMobile.html" . }}
+      <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        {{ partial "navMobileMenu.html" . }}
       </ul>
     </div>
     <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
@@ -46,34 +50,43 @@
       {{ end }}
       {{ end }}
 
-      {{ if gt (len (where site.Pages "Type" "search")) 0 }}
-      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="{{ "search" | relLangURL }}" title="{{ T "search" }}">
-        <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
-      </a>
+      {{ $navItems := slice "search" "rss" "posts" "categories" "tags" }}
+      {{ if site.Params.reorderNavItems }}
+        {{ $navItems = site.Params.reorderNavItems }}
       {{ end }}
 
-      {{ if gt (len (where site.RegularPages "Type" "posts")) 0 }}
-      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="{{ "posts" | relLangURL }}" title="{{ T "archives" }}">
-        <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
-      </a>
+      {{ if not site.Params.collapseNavItems }}
+
+      {{ range $navItems }}
+      {{ partial "renderNavItem.html" . }}
       {{ end }}
 
-      {{ if site.Taxonomies.categories }}
-      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="{{ "categories" | relLangURL }}" title="{{ T "allCategories" }}">
-        <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
-      </a>
+      {{ with site.Params.navItems }}
+      {{ partial "navCustomItems.html" (dict "navItems" $navItems "mobile" false) }}
       {{ end }}
 
-      {{ if site.Taxonomies.tags }}
-      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="{{ "tags" | relLangURL }}" title="{{ T "allTags" }}">
-        <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
-      </a>
+      {{ else }}
+
+      {{ $collapseNavItems := site.Params.collapseNavItems }}
+      {{ $items := complement $collapseNavItems $navItems }}
+      {{ range $items }}
+      {{ partial "renderNavItem.html" . }}
       {{ end }}
 
-      {{ if site.Params.rss }}
-      <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="{{ "index.xml" | relLangURL }}" title="RSS">
-        <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
-      </a>
+      <div class="dropdown dropdown-end dropdown-hover">
+        <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+          <ion-icon class="group-hover:text-primary-content text-xl" name="menu"></ion-icon>
+        </div>
+        <ul class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+          {{ range $collapseNavItems }}
+          {{ partial "renderMobileNavItem.html" . }}
+          {{ end }}
+
+          {{ with site.Params.navItems }}
+          {{ partial "navCustomItems.html" (dict "navItems" $navItems "mobile" true) }}
+          {{ end }}
+        </ul>
+      </div>
       {{ end }}
     </section>
   </div>

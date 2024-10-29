@@ -14,6 +14,10 @@ images:
 ---
 
 
+How to integrate the sass/scss features into your front-end frameworks? Watch this !
+
+<!--more-->
+
 Recently, I found a [project](https://github.com/0xAliRaza/habitly) that implemented the methodology mentioned in the famous book Atomic Habit by James Clear; I managed to update all the packages to the newest to get it up and running.
 
 Honestly, switching from vue-cli to vite is pretty smooth since syntaxes didn't change much within a big version. However, I encountered several errors related to Bootstrap and Sass.

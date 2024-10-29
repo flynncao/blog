@@ -1,16 +1,20 @@
 ---
-title: Word Power Made Easy 小白书
+title: 如何更高效无痛记忆高级英语词汇？
 date: 2023-05-13T00:00:00.000+00:00
 author: flynncao
 cover: /img/word-power-made-easy.jpg
 images:
   - /img/word-power-made-easy.jpg
 categories:
-  - 语言
+  - Linguistics
 tags:
-  - 英语
+  - English
+  - Reading
 ---
-一点小小的英语词汇提升路径：
+
+这是一篇靠谱的Word Power Made Easy （小白书）解析，记录了我几个月阅读、学习和使用的过程和心得体会。
+
+<!--more-->:
 
 前一段大概用网站测了下词汇量(vocabulary.com8700,扇贝13000)，和成年native还相去甚远。课堂上的东西倒是能应付，但是对付我的论文可能有些捉襟见肘了。（~~我是grammarly重度用户~~chatgpt是最好的英语老师）
 
@@ -27,7 +31,7 @@ tags:
 ## 什么时候需要这本书？
 构词的前提是你对足够数量的单词足够熟悉，不然会出现用@#@#%找A&**@!#的尴尬境地。我认为至少过了国内英语CET6再考虑这本，当然已经考过雅思托福PTE之类的出国考试更好。
 
-本书的前两个章节是考试章节，如果结果是below average作者给出的建议是好好掂量掂量，如果是average及以上就推荐可以推进了。
+本书的前两个章节是考试章节，如果结果是below average作者给出的建议是好好再考虑下，如果是average及以上就推荐可以推进了。
 
 ## 如何使用？
 
@@ -52,12 +56,14 @@ https://www.youtube.com/watchv=6drUzoeHZkg&ab_channel=Kim%26Co.byKimberlyAnnJime
 
 这是我的卡片：
 
-![20230715015232](https://raw.githubusercontent.com/FlynnCao/blog-images/main/img/20230715015232.png)
+![20230715015232](https://cfr2-img.flynncao.uk/20230715015232.png)
 
 
 后来我直接使用`Notion`来管理projects和tasks，很好用！
 
 https://twitter.com/real_flynncao/status/1654741064010600453
+
+配合notion[官方calendar](https://www.notion.so/product/calendar)的工具食用更佳！
 
 ## 具体食用方法
 
@@ -70,8 +76,10 @@ https://twitter.com/real_flynncao/status/1654741064010600453
 
 > `'` 是次重音，`'`+大写是首重音
 
-然后使用词典来纠正发音，我经常使用的词典有：
+然后使用词典来纠正发音，我经常使用的英英词典有：
+
 剑桥：https://dictionary.cambridge.org/
+
 韦氏词典：https://www.merriam-webster.com/
 
 ### 练习和纠错
@@ -93,7 +101,7 @@ https://twitter.com/real_flynncao/status/1654741064010600453
 
 言归正传，以session10精神科从业者这一篇为例，词源树可以这么画：
 
-![20230715015305](https://raw.githubusercontent.com/FlynnCao/blog-images/main/img/20230715015305.png)
+![20230715015305](https://cfr2-img.flynncao.uk/20230715015305.png)
 
 注意！注意！注意！不要标注中文意思。
 
@@ -135,38 +143,14 @@ psychiatrist -> /saɪˈkaɪə.trɪst/  [重点：iatreia的人]
 
 大概是让你消除对英语的一些疑虑（复杂性），让你爱上这门语言。
 
-虽然听起来很怪，但英语的确是印欧语系语言入门的不二之选了，而且义务教育都给你把语法体系铺垫好了，还不爱吗？
+虽然听起来很怪，但英语的确是印欧语系语言入门的不二之选了。而且义务教育已经把语法体系铺垫的很好了，还有什么理由拒绝呢？
 
-英语并不是一门“精确”的语言，但她确实是一门强逻辑语言，英语的精确建立在其无限的修饰之上，构词是修饰，*词块*是修饰，句子也是修饰，从句和主句也是修饰，有分析的成分吗? 有，但你需要等她修饰完。
+英语并不是一门“精确”的语言，但它确实是一门强逻辑语言，英语的精确建立在其无限的修饰之上，构词是修饰，*词块*是修饰，句子也是修饰，从句和主句也是修饰。
+即使有分析的成分吗， 也是建立在层层修饰之上。 
+
 
 > 所以为了让听话者不犯困，你需要尽可能地说出重要的成分。为了不让英语阅读者犯困，你需要在写文章的时候也应用这个规则。
 
-## 附录：作者推荐书单（2023.06.18更新）
+## 附录：作者推荐书单
 
-这里只列出了部分书单，完整请看这里！
-
-https://cultured-tellurium-ab3.notion.site/Bibliomaniac-4ccbf3b25c904fbe84cb27a92891a1ae?pvs=4
-
-
-### Psychology 
-
-| # | 标题 | 作者 | 出现的章节 | 
-| -- |-- | --| -- | 
-| 1 |  The Human Mind | Karl A. Menninger|  13 |
-| 2 |  Mind and Body | Flanders Dunbar |  13 |
-| 3 |  Understandable Psychiatry | Leland E. Hinsie |  13 |
-| 4 |  A General Introduction to Psychoanalysis | Sigmund Freud |  13 |
-| 5 | Emotional Problems of Living  | O. Spurgeon English and Gerald H. J. Pearson |  13 |
-| 6 | I Ain't Well — But I Sure I Am Better |  Jess Lair  |  13 |
-| 7 | The Disowned Self | Nathaniel Branden |  13 |
-| 8 | A Primer of Behavioral Psychology | Adelaide Bry |  13 |
-| 9 | I'm OK — You're OK | Thomas A. Harris, M.D |  13 |
-| 10 | Freedom to Be and Man the Manipulator | Everett L. Shostrum | 13 |
-| 11 | Games People Play | Eric Berne | 13 |
-| 12 | Love and Orgasm, Pleasure and The Language of the Body | Alexander Lowen, M.D | 
-| 13 | The Transparent Self | Sidney M. Jourard | 13 | 
-| 14 | Don't Say Yes When You Want to Say No | Herbert Festerheim and Jean Baer | 13|
-| 15 | Gestalt Therapy Verbatim | Frederick S. Peris |  13| 
-| 16 | Born to Win |  Muriel James and Dorothy Jongeward |  13 | 
-| 17 | Joy and Here Comes Everybody | William C. Schutz | 13 | 
-| 18 | The Fifty-Minute Hour | Robert Linderner | 13 | 
+https://flynncao.notion.site/Bibliomaniac-4ccbf3b25c904fbe84cb27a92891a1ae
