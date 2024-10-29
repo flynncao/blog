@@ -29,13 +29,13 @@ author = "flynncao"
 description = "The life record of Flynn Cao is presented here."
 avatar = "/me/avatar2.jpeg"
 headerTitle = "Majimay的四次元口袋"
-motto = "Its better to be absolutely ridiculous than absolutely boring!"
+motto = "Sometimes you never realize the value of a moment until it becomes a memory."
 
 footerBottomText = ""
 
 rss = true
 
-utterancesRepo = ""
+utterancesRepo = "flynncao/flynncao.github.io"
 
 # valine = true
 # LEANCLOUD_APP_ID = ""
@@ -95,4 +95,3 @@ ID = 'G-6XW7QWCBGK'
     weight = 2
     [languages.en.params]
       subtitle = 'Reference, Tutorials, and Explanations'	
-
